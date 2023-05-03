@@ -23,6 +23,11 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
   },
 
+  {
+    "hrsh7th/nvim-cmp",
+    enabled = false,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
@@ -50,7 +55,7 @@ local plugins = {
   },
 
   {
-   import = "custom.configs.coc" 
+    import = "custom.configs.coc"
   }
 
   -- To make a plugin not be loaded
